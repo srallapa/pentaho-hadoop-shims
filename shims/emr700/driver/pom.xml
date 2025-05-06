@@ -37,7 +37,11 @@
     <dependency>
       <groupId>org.apache.thrift</groupId>
       <artifactId>libthrift</artifactId>
+<<<<<<< Updated upstream
       <version>0.13.0</version>
+=======
+      <version>0.16.0</version>
+>>>>>>> Stashed changes
     </dependency>  
     <dependency>
       <groupId>org.pentaho</groupId>
@@ -529,6 +533,29 @@
       </exclusions>
     </dependency>
     <dependency>
+<<<<<<< Updated upstream
+=======
+      <groupId>org.apache.hive</groupId>
+      <artifactId>hive-service</artifactId>
+      <version>${org.apache.hive.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive</groupId>
+      <artifactId>hive-service-rpc</artifactId>
+      <version>${org.apache.hive.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive</groupId>
+      <artifactId>hive-exec</artifactId>
+      <version>${org.apache.hive.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hive.shims</groupId>
+      <artifactId>hive-shims-common</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+>>>>>>> Stashed changes
       <groupId>org.yaml</groupId>
       <artifactId>snakeyaml</artifactId>
       <version>${snakeyaml.version}</version>
@@ -784,7 +811,8 @@
             <resolverFilter>
               <include>
                 <!--Needed for Pig-->
-                *:antlr-runtime,*:automaton,*:pig,*:sqoop,*:joda-time,*:jython,*:aircompressor,*:netty-*,software.amazon.awssdk:*,*:hbase-mapreduce,*:libthrift
+                *:antlr-runtime,*:automaton,*:pig,*:sqoop,*:joda-time,*:jython,*:aircompressor,*:netty-*,software.amazon.awssdk:*,*:hbase-mapreduce,*:libthrift,
+                *:hive-service-rpc,*:hive-shims-common
               </include>
               <transitive>false</transitive>
             </resolverFilter>
